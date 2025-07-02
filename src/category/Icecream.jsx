@@ -9,7 +9,7 @@ const Icecream = () => {
   const { addToCart } = useCart(); // ✅ Access cart functions
 
   useEffect(() => {
-    fetch('http://macback.onrender.com/Icecreambck', {
+    fetch('https://macback.onrender.com/Icecreambck', {
       method: "POST",
       headers: {
         'Accept': 'application/json',

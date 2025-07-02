@@ -9,7 +9,7 @@ const Pizza = () => {
 
   // Fetch pizza data
   useEffect(() => {
-    fetch('http://macback.onrender.com/pizzabck', {
+    fetch('https://macback.onrender.com/pizzabck', {
       method: "POST",
       headers: {
         'Accept': 'application/json',
