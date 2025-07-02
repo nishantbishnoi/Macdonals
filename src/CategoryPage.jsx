@@ -7,7 +7,7 @@ const CategoryPage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('http://localhost:8100/catego', {
+    fetch('https://macback.onrender.com/catego', {
       method: "POST",
       headers: {
         'Accept': 'application/json',
