@@ -1,0 +1,129 @@
+/* ===== Reset & Global Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f0f2f5, #dfe9f3);
+  padding: 20px;
+}
+
+/* ===== Search Bar ===== */
+#search-bar {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 30px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  display: block;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+#search-bar:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.1);
+}
+
+/* ===== Product Grid ===== */
+#abmain {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 0 10px;
+  animation: fadeInUp 1s ease;
+}
+
+/* ===== Product Card ===== */
+.ab1 {
+  background-color: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  padding: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInCard 0.7s ease-in-out;
+}
+
+.ab1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+/* ===== Image Styling ===== */
+#ab2 {
+  width: 100%;
+  max-width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+/* ===== Text Styling ===== */
+#ab3 {
+  color: #2c3e50;
+  margin: 8px 0;
+}
+
+/* ===== Button Styling ===== */
+#ab7 {
+  padding: 12px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#ab7:hover {
+  background: linear-gradient(to right, #0056b3, #0099cc);
+  transform: scale(1.05);
+}
+
+/* ===== Responsive Typography ===== */
+@media (max-width: 768px) {
+  #ab3 {
+    font-size: 16px;
+  }
+
+  #ab7 {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+/* ===== Keyframes for Animation ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInCard {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

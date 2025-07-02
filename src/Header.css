@@ -1,0 +1,84 @@
+/* Logo styles */
+#image {
+  width: 200px;
+  height: 110px;
+  margin-left: 20px;
+}
+
+/* Header container */
+.domino-header {
+  display: flex;
+  justify-content: space-between; /* left: logo, right: cart button */
+  align-items: center;
+  height: 20vh;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 0 40px;
+}
+
+/* Title (if used anywhere) */
+.domino-title {
+  font-size: 3rem;
+  font-weight: bold;
+  animation: dominoShine 5s ease-out infinite;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Animation for title */
+@keyframes dominoShine {
+  0%   { color: #e74c3c; }
+  20%  { color: #9b59b6; }
+  40%  { color: #3498db; }
+  60%  { color: #2ecc71; }
+  80%  { color: #f39c12; }
+  100% { color: #e74c3c; }
+}
+
+/* Cart button container */
+.cart-button-container {
+  margin-right: 10px;
+}
+
+.cart-button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cart-button:hover {
+  background-color: #cc0000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .domino-header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  #image {
+    margin: 0 auto;
+  }
+
+  .cart-button-container {
+    margin-top: 10px;
+  }
+
+  .domino-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .domino-title {
+    font-size: 1.8rem;
+  }
+}
