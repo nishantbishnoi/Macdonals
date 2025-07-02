@@ -8,7 +8,7 @@ const Navbar = () => {
   const navigate = useNavigate(); // 🟡 Step 2: Setup navigation hook
 
   useEffect(() => {
-    fetch('http://localhost:8100/catego', {
+    fetch('https://macback.onrender.com/catego', {
       method: "post",
       headers: {
         'Accept': 'application/json',
